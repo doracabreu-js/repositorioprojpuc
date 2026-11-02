@@ -29,5 +29,24 @@ onmouseout="this.style.color='black';">Bangkok</li>
         </button>
     </div>
     <script src="app.js"></script>
+    <script>
+        document.getElementById(`btnMudaFundo`).addEventListener('click', mudarFundo)
+function mudarFundo(){    
+let cor = document.getElementById('corFundo').value
+document.body.style.backgroundColor = cor
+}
+document.getElementById(`btnCarregaDados`).addEventListener('click', carregaDados)
+function carregaDados () {
+   let ulCidades = document.getElementById('ulCidades')
+   strTextoHTML = ''
+   for (let i = 0; i < cidades.length; i++){
+    let cidade = cidades[i];
+    strTextoHTML += `<li>
+              <a href="detalhes.html?id=${cidade.id}">
+               ${cidade.cidade} - ${cidade.país}</a></li>`
+   }
+   ulCidades.innerHTML = strTextoHTML
+}
+    </script>
 </body>
 </html>
