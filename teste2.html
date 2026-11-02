@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="cssteste2.css">
 </head>
 <body>
-    <ul>
+        <button id="btnCarregaDados">
+        Carregar Dados
+        </button>
+    <ul id="ulCidades">
         <li onmouseover="this.style.color='red';"
 onmouseout="this.style.color='black';">Hong Kong</li>
         <li onmouseover="this.style.color='red';"
@@ -15,19 +18,16 @@ onmouseout="this.style.color='black';">Tokyo</li>
         <li onmouseover="this.style.color='red';"
 onmouseout="this.style.color='black';">Shanghai</li>
         <li onmouseover="this.style.color='red';"
-onmouseout="this.style.color='black';">Seoul</li>
+onmouseout="this.style.color='black';">Seul</li>
         <li onmouseover="this.style.color='red';"
 onmouseout="this.style.color='black';">Bangkok</li>
     </ul>
     <div>
         <input type="text" id="corFundo">        
-        <button id="btnMudaFundo" onclick="mudarFundo()">
+        <button id="btnMudaFundo">
         Mudar fundo da tela
         </button>
     </div>
-
-
-
     <script src="app.js"></script>
 </body>
 </html>
